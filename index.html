@@ -11,6 +11,7 @@
       referrerpolicy="no-referrer"
     />
     <title>Password Generator App</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
@@ -22,32 +23,41 @@
           placeholder="PASSWORD"
           readonly
         />
-        <button class="copy-button"><i class="fa-regular fa-copy"></i></button>
+        <button class="copy-button">
+          <i class="fa-regular fa-copy"></i>
+        </button>
       </div>
 
       <div class="input-section">
         <div class="input-item">
           <label for="input-length">Input Length</label>
-          <input class="input-length" type="text" min="6" max="20" value="10" />
+          <input
+            class="input-length"
+            type="number"
+            min="6"
+            max="20"
+            value="10"
+          />
         </div>
         <div class="input-item">
           <label for="uppercase">Include Uppercase Letter</label>
-          <input class="uppercase-checkbox" type="checkbox" />
+          <input type="checkbox" class="uppercase-checkbox" />
+        </div>
+        <div class="input-item">
+          <label for="lowercase">Include Lowercase Letter</label>
+          <input type="checkbox" class="lowercase-checkbox" />
         </div>
         <div class="input-item">
           <label for="numbers">Include Numbers</label>
-          <input class="numbers-checkbox" type="checkbox" />
-        </div>
-        <div class="input-item">
-          <label for="uppercase">Include Numbers</label>
-          <input class="uppercase-checkbox" type="checkbox" />
+          <input type="checkbox" class="numbers-checkbox" />
         </div>
         <div class="input-item">
           <label for="symbols">Include Symbols</label>
-          <input class="symbols-checkbox" type="checkbox" />
+          <input type="checkbox" class="symbols-checkbox" />
         </div>
       </div>
-      <button>Generate Password</button>
+      <button class="generate-button">Generate Password</button>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
