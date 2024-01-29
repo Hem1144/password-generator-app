@@ -62,8 +62,9 @@ generateButtonEl.addEventListener("click", function () {
     funcArray.push(getRandomSymbol);
   }
 
+  //* implemented logic using for loop
   for (let i = 0; i < passwordLength - funcArray.length; i++) {
-    const index = getRandomInteger(0, funcArray.length);
+    const index = getRandomInteger(0, funcArray.length); //* length of password
     password = password + funcArray[index]();
   }
   console.log(funcArray);
