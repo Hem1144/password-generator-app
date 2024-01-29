@@ -26,6 +26,8 @@ body {
 h1 {
   font-size: 2rem;
   opacity: 0.8;
+  color: chocolate;
+  text-wrap: wrap;
 }
 
 .password-section {
